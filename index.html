@@ -52,9 +52,9 @@
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -62,7 +62,7 @@
   </nav>
 
   <!-- Hero -->
-  <div class="container">
+  <div class="container" id="home">
     <header class="py-5">
       <div class="container px-5 pb-5">
         <div class="row gx-5 align-items-center">
@@ -79,7 +79,7 @@
                 <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder btn-pink"
                   href="https://www.bokadirekt.se/places/izbam-beauty-40423?fbclid=PAAabEuSj-kEKC0P-fJOVZphEBEqexeVDZ-1N_JZ0QdWFJ66ablLxEn78Cl7g_aem_AeVFqtiIiJtYPjdB8ZdsulkwdQlYO84sknuOn7d9cT0M6E1DporKHVm7PVFdmDIz4vM">Book
                   Now</a>
-                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Pricing</a>
+                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="#pricing">Pricing</a>
               </div>
             </div>
           </div>
@@ -149,8 +149,17 @@
   </section>
 
   <!-- services -->
-  <section class="py-5">
+  <section class="py-5" id="services">
     <div class="container px-4 px-lg-5 mt-5">
+      <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal text-body-emphasis">Services</h1>
+          <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with
+            this Bootstrap example. It’s built with default Bootstrap components and utilities with little
+            customization.
+          </p>
+        </div>
+      </header>
       <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
         <div class="col mb-5">
           <div class="card h-100">
@@ -257,7 +266,7 @@
   </section>
 
   <!--  Pricing -->
-  <div class="container py-5">
+  <div class="container py-5" id="pricing">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
@@ -398,14 +407,14 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="...">
+            <img class="rounded-circle small-img mb-3 w-50" src="./img/person.png" alt="...">
             <h5>Margaret E.</h5>
             <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="...">
+            <img class="rounded-circle small-img mb-3 w-50" src="./img/person.png" alt="...">
             <h5>Fred S.</h5>
             <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
               landing pages."</p>
@@ -413,7 +422,7 @@
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="...">
+            <img class="rounded-circle small-img mb-3 w-50" src="./img/person.png" alt="...">
             <h5>Sarah W.</h5>
             <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
           </div>
@@ -474,11 +483,10 @@
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi.
             Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
             iste laborum vero?</p>
-          <div class="d-flex">
-            <button class="btn btn-pink flex-shrink-0" type="button">
-              <i class="bi-cart-fill me-1"></i>
-              Add to cart
-            </button>
+          <div class=" d-sm-flex  mb-3">
+            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder btn-pink"
+              href="https://www.bokadirekt.se/places/izbam-beauty-40423?fbclid=PAAabEuSj-kEKC0P-fJOVZphEBEqexeVDZ-1N_JZ0QdWFJ66ablLxEn78Cl7g_aem_AeVFqtiIiJtYPjdB8ZdsulkwdQlYO84sknuOn7d9cT0M6E1DporKHVm7PVFdmDIz4vM">Book
+              Now</a>
           </div>
         </div>
       </div>
@@ -492,22 +500,25 @@
         <div class="col-xxl-8">
           <div class="text-center my-5">
             <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Contact Me</span></h2>
-            <p class="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui
-              unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa!
-              Praesentium ratione atque dolorem?</p>
-            <div class="d-flex justify-content-center fs-2 gap-4">
-              <a class="text-gradient" href="#!"><img width="35" src="./img/instagram.png "></a>
-              <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-              <a class="text-gradient" href="#!"><img width="35" src="./img/facebook.png"></a></a>
-            </div>
+            <p class="lead fw-light mb-4"> Älggatan 48A, 21615
+              Limhamn</p>
+              <p>Tel : +46762208298</p>
+              <p>Öppet tider :
+                Måndag - Lördag kl.10:00 - 18:00</p>
+            <img class="w-100" src="./img/map.png" alt="">
+
           </div>
         </div>
       </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between justify-content-center py-3 m-4 border-top">
-      <div class="col-md-4 d-flex justify-content-center">
+    <footer class="d-flex flex-wrap justify-content-between py-3 m-4 border-top">
+      <div class="col-md-4 d-flex ">
         <span class="mb-3 mb-md-0 text-body-secondary">© Izbam</span>
+      </div>
+      <div class="d-flex justify-content-center fs-2 gap-4">
+        <a class="text-gradient" href="#!"><img width="35" src="./img/instagram.png "></a>
+        <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+        <a class="text-gradient" href="#!"><img width="35" src="./img/facebook.png"></a></a>
       </div>
     </footer>
   </div>
