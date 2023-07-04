@@ -9,7 +9,8 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
   <style>
-    body {
+    body,
+    .bg-light {
       background-color: #EFEBE0;
     }
 
@@ -19,74 +20,80 @@
 
     .btn-pink {
       background: #FB4570;
+      border: #FB4570;
       color: white;
     }
 
-    .card-body > * {
-      object-fit:;
+    .btn-pink:hover,
+    .btn-pink:focus,
+    .btn-pink:active,
+    .btn-pink.active,
+    .open>.dropdown-toggle.btn-pink {
+      color: black;
+      background-color: #FB6B90;
     }
-
-    
   </style>
 </head>
 
 
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FB8DA0;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="eye-logo" src="./img/eye.png" alt=""></a>
+
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <div class="container px-5">
+      <a class="navbar-brand" href="index.html"><img class="eye-logo" src="./img/eye.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallery">Gallery</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Fransutbildning</a></li>
-              <li><a class="dropdown-item" href="#price">Price</a></li>
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-
-  <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="./img/hero.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-pink btn-lg px-4 gap-3"><a
-            href="https://www.bokadirekt.se/places/izbam-beauty-40423?fbclid=PAAabEuSj-kEKC0P-fJOVZphEBEqexeVDZ-1N_JZ0QdWFJ66ablLxEn78Cl7g_aem_AeVFqtiIiJtYPjdB8ZdsulkwdQlYO84sknuOn7d9cT0M6E1DporKHVm7PVFdmDIz4vM"
-            class="nav-link active" aria-current="page">Book Now</a></button>
+  <!-- Hero -->
+  <div class="container">
+    <header class="py-5">
+      <div class="container px-5 pb-5">
+        <div class="row gx-5 align-items-center">
+          <div class="col-xxl-5">
+            <!-- Header text content-->
+            <div class="text-center text-xxl-start">
+              <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                <div class="text-uppercase">Design · Development · Marketing</div>
+              </div>
+              <div class="fs-3 fw-light text-muted">I can help your business to</div>
+              <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and grow fast</span>
+              </h1>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder btn-pink"
+                  href="https://www.bokadirekt.se/places/izbam-beauty-40423?fbclid=PAAabEuSj-kEKC0P-fJOVZphEBEqexeVDZ-1N_JZ0QdWFJ66ablLxEn78Cl7g_aem_AeVFqtiIiJtYPjdB8ZdsulkwdQlYO84sknuOn7d9cT0M6E1DporKHVm7PVFdmDIz4vM">Book
+                  Now</a>
+                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-7">
+            <div class="d-flex justify-content-center mt-1 mt-xxl-0">
+              <img class="profile-img" src="./img/IZBAM PINK-01.png" width="100%" alt="Izbam Logo">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+  </div>
+  </div>
+  </header>
   </div>
 
 
-  <div id="gallery" class="container">
+  <!-- gallery -->
+  <!-- <div id="gallery" class="container">
     <h2>Gallery</h2>
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
@@ -186,75 +193,148 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
+
+
+  <!--  Pricing -->
   <div class="container py-5">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
-        <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with
+          this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+        </p>
       </div>
     </header>
-  
     <main>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="row row-cols-1 row-cols-md-2 mb-2">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">New Set</h4>
+              <h4 class="my-0 fw-normal text-center">Nytt set </h4>
             </div>
             <div class="card-body">
-              <img src="./img/price/price.jpeg" alt="">
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li class="d-flex justify-content-between">Singel C<span class="text-end">500:-</span></li>
+                <li class="d-flex justify-content-between">Singel D<span class="text-end">550:-</span></li>
+                <li class="d-flex justify-content-between">2D volym<span class="text-end">600:-</span></li>
+                <li class="d-flex justify-content-between">2D volym (Kim K)<span class="text-end">650:-</span></li>
+                <li class="d-flex justify-content-between">3D volym<span class="text-end">700:-</span></li>
+                <li class="d-flex justify-content-between">3D volym (Kim K)<span class="text-end">750:-</span></li>
+                <li class="d-flex justify-content-between">4D voym<span class="text-end">800:-</span></li>
+                <li class="d-flex justify-content-between">5D volym<span class="text-end">900:-</span></li>
+                <li class="d-flex justify-content-between">6D volym<span class="text-end">1000:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym<span class="text-end">900:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (Kim K)<span class="text-end">950:-</span></li>
+                <li class="d-flex justify-content-between">4D-6D volym<span class="text-end">950:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (M curl)<span class="text-end">1100:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (L curl)<span class="text-end">1100:-</span></li>
+                <li class="d-flex justify-content-between">Eyeliner Effect<span class="text-end">1200:-</span></li>
+                <li class="d-flex justify-content-between">Wet Look<span class="text-end">1200:-</span></li>
+                <li class="d-flex justify-content-between">Fransar + färger 🌈 <span class="text-end">Behandling + 200:-</span></li>
+                <li class="d-flex justify-content-between">Brown Lashes<span class="text-end">Behandling + 200:-</span></li>
+                <li class="d-flex justify-content-between">Anime Lashes<span class="text-end">799:- </span></li>
+                <li class="d-flex justify-content-between">Anime Lashes + underlashes<span class="text-end">1100:-</span></li>
+                
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-pink">Book Now</button>
             </div>
           </div>
         </div>
-        <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Pro</h4>
+              <h4 class="my-0 fw-normal text-center">Nytt set </h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
-                <li><img src="./img/price/price2.jpeg" alt=""></li>
+                <li class="d-flex justify-content-between">Singel C<span class="text-end">500:-</span></li>
+                <li class="d-flex justify-content-between">Singel D<span class="text-end">550:-</span></li>
+                <li class="d-flex justify-content-between">2D volym<span class="text-end">600:-</span></li>
+                <li class="d-flex justify-content-between">2D volym (Kim K)<span class="text-end">650:-</span></li>
+                <li class="d-flex justify-content-between">3D volym<span class="text-end">700:-</span></li>
+                <li class="d-flex justify-content-between">3D volym (Kim K)<span class="text-end">750:-</span></li>
+                <li class="d-flex justify-content-between">4D voym<span class="text-end">800:-</span></li>
+                <li class="d-flex justify-content-between">5D volym<span class="text-end">900:-</span></li>
+                <li class="d-flex justify-content-between">6D volym<span class="text-end">1000:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym<span class="text-end">900:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (Kim K)<span class="text-end">950:-</span></li>
+                <li class="d-flex justify-content-between">4D-6D volym<span class="text-end">950:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (M curl)<span class="text-end">1100:-</span></li>
+                <li class="d-flex justify-content-between">3D-5D volym (L curl)<span class="text-end">1100:-</span></li>
+                <li class="d-flex justify-content-between">Eyeliner Effect<span class="text-end">1200:-</span></li>
+                <li class="d-flex justify-content-between">Wet Look<span class="text-end">1200:-</span></li>
+                <li class="d-flex justify-content-between">Fransar + färger 🌈 <span class="text-end">Behandling + 200:-</span></li>
+                <li class="d-flex justify-content-between">Brown Lashes<span class="text-end">Behandling + 200:-</span></li>
+                <li class="d-flex justify-content-between">Anime Lashes<span class="text-end">799:- </span></li>
+                <li class="d-flex justify-content-between">Anime Lashes + underlashes<span class="text-end">1100:-</span></li>
+                
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <button type="button" class="w-100 btn btn-lg btn-pink">Book Now</button>
             </div>
           </div>
         </div>
       </div>
     </main>
-  
+
   </div>
 
+<!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container p-5">
+      <h2 class="mb-5 mt-3">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="...">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="...">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice
+              landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="...">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
+
+  <!-- Contact Me -->
+  <div class="container" id="contact">
+    <div class="container px-5">
+      <div class="row gx-5 justify-content-center">
+        <div class="col-xxl-8">
+          <div class="text-center my-5">
+            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Contact Me</span></h2>
+            <p class="lead fw-light mb-4">My name is Start Bootstrap and I help brands grow.</p>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui
+              unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa!
+              Praesentium ratione atque dolorem?</p>
+            <div class="d-flex justify-content-center fs-2 gap-4">
+              <a class="text-gradient" href="#!"><img width="35" src="./img/instagram.png "></a>
+              <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
+              <a class="text-gradient" href="#!"><img width="35" src="./img/facebook.png"></a></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between justify-content-center py-3 m-4 border-top">
+      <div class="col-md-4 d-flex justify-content-center">
         <span class="mb-3 mb-md-0 text-body-secondary">© Izbam</span>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="https://instagram.com/izbamlashes?igshid=NTc4MTIwNjQ2YQ=="><img width="24" src="./img/instagram.png "></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/izbambeauty"><img width="24" src="./img/facebook.png"></a></li>
-      </ul>
     </footer>
   </div>
 
