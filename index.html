@@ -7,11 +7,18 @@
   <title>IZBAM BEAUTY</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet">
+
 
   <style>
-    body,
-    .bg-light {
+
+    body {
       background-color: #EFEBE0;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
     }
 
     .eye-logo {
@@ -47,6 +54,15 @@
 
     .before-nav>p {
       padding: 0.5rem;
+    }
+
+    .my-font-head {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .my-font-body {
+      font-family: 'Futura LT', sans-serif;
+      font-weight: 400;
     }
   </style>
 </head>
@@ -85,10 +101,10 @@
           <div class="col-xxl-5">
             <!-- Header text content-->
             <div class="text-center text-xxl-start">
-              <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+              <!-- <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
                 <div class="text-uppercase">Design · Development · Marketing</div>
               </div>
-              <div class="fs-3 fw-light text-muted">I can help your business to</div>
+              <div class="fs-3 fw-light text-muted">I can help your business to</div> -->
               <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">IZBAM BEAUTY</span>
               </h1>
               <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
@@ -113,7 +129,7 @@
   <div class="container px-4 px-lg-5">
     <!-- Project One Row-->
     <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-     
+
       <div class="col-lg-6"><img class="img-fluid" src="./img/owner.jpeg" alt="..."></div>
       <div class="col-lg-6">
         <div class="bg-black text-center h-100 project">
@@ -121,7 +137,7 @@
             <div class="project-text w-100 my-auto text-center text-lg-left">
               <h3 class="text-white">OM IZBAM BEAUTY</h3>
               <h4 class="text-white">Varmt välkommen till Izbam Beauty!</h4>
-              <p class="mb-0 p-5 text-white-50">Vi är en skönhetssalong i Malmö som erbjuder fransförlängning, lashlift,
+              <p class="mb-0 p-5 text-white-50 my-font-body">Vi är en skönhetssalong i Malmö som erbjuder fransförlängning, lashlift,
                 browlift, plockning samt färgning av ögonbryn med BROWHENNA. <br>
 
                 Mitt namn är Suwapat och jag är sedan 2017 diplomerad fransstylist samt certifierad som lärare inom
@@ -183,7 +199,7 @@
             <span class="text-decoration-line-through">$45.00</span>
             <span>$40.00</span>
           </div>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi.
+          <p class="lead my-font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem quidem modi.
             Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis delectus ipsam minima ea
             iste laborum vero?</p>
           <div class=" d-sm-flex  mb-3">
@@ -256,8 +272,8 @@
     <div class="container px-4 px-lg-5 mt-5">
       <header>
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal text-body-emphasis">Behandlingar</h1>
-          <p class="fs-5 text-body-secondary">Här är ett exempel på olika stil av fransförlängning. Du kan se fler
+          <h1 class="display-4 my-font-body">Behandlingar</h1>
+          <p class="my-font-body">Här är ett exempel på olika stil av fransförlängning. Du kan se fler
             bilder via :
             •IG : izbamlashes <br>
             •Facebook : izbam beauty <br>
@@ -277,7 +293,6 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">Kim K</h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -293,7 +308,6 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">Singel D</h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -309,7 +323,6 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">Anime Lashes</h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -326,7 +339,6 @@
                 <h5 class="fw-bolder">Foxeyes Effect
                 </h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -342,7 +354,6 @@
                 <!-- Product name-->
                 <h5 class="fw-bolder">Singel C</h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -359,7 +370,22 @@
                 <h5 class="fw-bolder">Volume
                 </h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+            <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+            <!-- Product image-->
+            <img class="card-img-top" src="./img/lifting.jpeg" alt="...">
+            <!-- Product details-->
+            <div class="card-body p-4">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Lashlift & Browlift
+                </h5>
+                <!-- Product price-->
               </div>
             </div>
           </div>
@@ -373,27 +399,9 @@
             <div class="card-body p-4">
               <div class="text-center">
                 <!-- Product name-->
-                <h5 class="fw-bolder">Lashlift & Browlift
-                </h5>
-                <!-- Product price-->
-                xxxxxxxxxxxx
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-5">
-          <div class="card h-100">
-            <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
-            <!-- Product image-->
-            <img class="card-img-top" src="./img/plock.jpeg" alt="...">
-            <!-- Product details-->
-            <div class="card-body p-4">
-              <div class="text-center">
-                <!-- Product name-->
                 <h5 class="fw-bolder">Plock+BROWHENNA
                 </h5>
                 <!-- Product price-->
-                xxxxxxxxxxxx
               </div>
             </div>
           </div>
@@ -408,8 +416,8 @@
   <div class="container py-5" id="pricing">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Prislista </h1>
-        <p class="fs-5 text-body-secondary">Här är prislista på olika behandlingar.
+        <h1 class="display-4 my-font-body">Prislista </h1>
+        <p class="my-font-body">Här är prislista på olika behandlingar.
           •Påfyllning gäller exakt MAX 4 VECKOR annars räknar det som nytt set.
           •Påfyllning gäller ej om man har gjort fransar från hos en annan.
         </p>
@@ -420,10 +428,10 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal text-center">Nytt set </h4>
+              <h4 class="my-0 fw-normal text-center my-font-body">Nytt set </h4>
             </div>
             <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="list-unstyled mt-3 mb-4 my-font-body">
                 <li class="d-flex justify-content-between">Borttagning<span class="text-end">200:-</span></li>
                 <li class="d-flex justify-content-between">Singel C<span class="text-end">500:-</span></li>
                 <li class="d-flex justify-content-between">Singel D<span class="text-end">550:-</span></li>
@@ -451,17 +459,17 @@
                     class="text-end">1100:-</span></li>
 
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-pink">Book Now</button>
+              <button type="button" class="w-100 btn btn-lg btn-pink my-font-body">Book Now</button>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal text-center">Påfyllning 1-2 v.</h4>
+              <h4 class="my-0 fw-normal text-center my-font-body">Påfyllning 1-2 v.</h4>
             </div>
             <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="list-unstyled mt-3 mb-4 my-font-body">
                 <li class="d-flex justify-content-between">Singel C<span class="text-end">400:-</span></li>
                 <li class="d-flex justify-content-between">Singel D<span class="text-end">450:-</span></li>
                 <li class="d-flex justify-content-between">2D volym<span class="text-end">500:-</span></li>
@@ -491,17 +499,17 @@
                   ⚠️Påfyllning gäller ej om man har gjort fransar från hos en annan.
                 </li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-pink">Book Now</button>
+              <button type="button" class="w-100 btn btn-lg btn-pink my-font-body">Book Now</button>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal text-center">Påfyllning 2-4 v.</h4>
+              <h4 class="my-0 fw-normal text-center my-font-body">Påfyllning 2-4 v.</h4>
             </div>
             <div class="card-body">
-              <ul class="list-unstyled mt-3 mb-4">
+              <ul class="list-unstyled mt-3 mb-4 my-font-body">
                 <li class="d-flex justify-content-between">Singel C<span class="text-end">450:-</span></li>
                 <li class="d-flex justify-content-between">Singel D<span class="text-end">500:-</span></li>
                 <li class="d-flex justify-content-between">2D volym<span class="text-end">550:-</span></li>
@@ -531,7 +539,7 @@
                   ⚠️Påfyllning gäller ej om man har gjort fransar från hos en annan.
                 </li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-pink">Book Now</button>
+              <button type="button" class="w-100 btn btn-lg btn-pink my-font-body">Book Now</button>
             </div>
           </div>
         </div>
@@ -580,14 +588,14 @@
       <div class="row gx-5 justify-content-center">
         <div class="col-xxl-8">
           <div class="text-center my-5">
-            <h2 class="display-5 fw-bolder">Kontakt oss</span></h2>
+            <h2 class="display-5 fw-bolder ">Kontakt oss</span></h2>
 
             <!-- <img src="./img/contactpig.png" width="100%"> -->
 
-            <p class="lead fw-light mb-4"> Älggatan 48A, 21615
+            <p class="lead mb-4 my-font-body"> Älggatan 48A, 21615
               Limhamn</p>
-            <p>Tel : +46762208298</p>
-            <p>Öppet tider : <br>
+            <p class="my-font-body">Tel : +46762208298</p>
+            <p class="my-font-body">Öppet tider : <br>
               Måndag 10:00-18:00<br>
               Tisdag 10:00-18:00<br>
               Onsdag 10:00-18:00<br>
@@ -610,7 +618,7 @@
           <li class="nav-item"><a class=" px-3" href="https://www.facebook.com/izbambeauty"><img width="35"
                 src="./img/facebook.png"></a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2023 IZBAM BEAUTY</p>
+        <p class="text-center text-body-secondary my-font-body">© 2023 IZBAM BEAUTY</p>
       </footer>
     </div>
   </div>
